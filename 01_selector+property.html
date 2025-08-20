@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 선택자, 프로퍼티(속성)</title>
+    <style>
+      /*
+        선택자 {
+            속성: 값;
+        }
+        */
+      /* 그냥 입력하면 태그 이름 */
+      /* #id */
+      #brand {
+        color: blue;
+      }
+      /* .class */
+      .lead {
+        color: green;
+      }
+      .alert {
+        color: red;
+      }
+      strong {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css -> 선택. HTML <-> 별도로 존재가 가능 -->
+    <!-- id와 class 같은 꾸며주는 걸로 경합하게 되면 id가 이김 : 특이도, 우선순위 -->
+    <h1 id="brand" class="lead">
+      구별을 위한 선택자 id, 1개만 존재하는 걸 '권장'
+    </h1>
+    <p id="brand">그런갑다... 만들 때 신경써 줘야함(????)</p>
+    <p class="lead">재사용을 위한 클래스 예시</p>
+    <h6 class="lead">재사용했습니다~</h6>
+    <p class="alert">경고 경고~</p>
+    <strong>정말 쎄보이게 하고 싶다</strong>
+  </body>
+</html>
